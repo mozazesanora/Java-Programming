@@ -16,6 +16,7 @@ public class GDaftar extends javax.swing.JFrame {
      */
     public GDaftar() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -69,8 +70,18 @@ public class GDaftar extends javax.swing.JFrame {
         DRPerempuan.setText("Perempuan");
 
         DBSubmit.setText("Submit");
+        DBSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DBSubmitActionPerformed(evt);
+            }
+        });
 
         DBCancel.setText("Cancel");
+        DBCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DBCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -143,6 +154,18 @@ public class GDaftar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void DBCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBCancelActionPerformed
+        // TODO add your handling code here:
+        new GLogin().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_DBCancelActionPerformed
+
+    private void DBSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBSubmitActionPerformed
+        // TODO add your handling code here:
+        new GLogin().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_DBSubmitActionPerformed
 
     /**
      * @param args the command line arguments

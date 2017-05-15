@@ -17,6 +17,7 @@ public class GLogin extends javax.swing.JFrame {
      */
     public GLogin() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -50,10 +51,20 @@ public class GLogin extends javax.swing.JFrame {
         jLabel3.setText("Password:");
 
         BLogin.setText("Login");
+        BLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BLoginActionPerformed(evt);
+            }
+        });
 
         LForget.setText("Lupa Password?");
 
         BDaftar.setText("Daftar");
+        BDaftar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BDaftarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -103,6 +114,18 @@ public class GLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void BDaftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BDaftarActionPerformed
+        // TODO add your handling code here:
+        new GDaftar().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_BDaftarActionPerformed
+
+    private void BLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BLoginActionPerformed
+        // TODO add your handling code here:
+        new GBeranda().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_BLoginActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -133,6 +156,7 @@ public class GLogin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
                 new GLogin().setVisible(true);
             }
         });

@@ -101,6 +101,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Login"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BLoginActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="LForget">
       <Properties>
@@ -111,6 +114,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Daftar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BDaftarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
