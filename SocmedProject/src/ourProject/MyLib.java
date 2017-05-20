@@ -11,6 +11,6 @@ package ourProject;
  */
 public interface MyLib {
     public void login(String paramUsername , String paramPassword);
-    public void register(String paramNama , String paramUsername ,String paramJenisKelamin , String paramTelp);
-     
+    public void register(String paramNama , String paramUsername ,String paramJenisKelamin , String paramEmail , String paramPassword);
+    public void posting(String paramPost );
 }
